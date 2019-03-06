@@ -23,6 +23,7 @@ brew install git git-lfs openssh grep
 
 # Other
 brew install ledger
+brew install figlet cowsay
 
 brew cleanup
 
