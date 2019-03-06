@@ -8,6 +8,7 @@ source zsh/paths.zsh
 source zsh/alias-git.zsh
 source zsh/alias-general.zsh
 source zsh/exports.zsh
+source zsh/general.zsh
 
 # Load in any user zsh files in the ~/.zsh directory
 if [ -d ~/.zsh ]; then

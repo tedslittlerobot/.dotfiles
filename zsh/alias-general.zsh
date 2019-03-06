@@ -7,3 +7,7 @@ alias vi='nvim'
 alias vim='nvim'
 alias vzrc='vi ~/.zshrc'
 alias vvrc='vi ~/.config/nvim/init.vim'
+
+# sudo the last command
+alias ffs='sudo $(fc -ln -1)'
+
