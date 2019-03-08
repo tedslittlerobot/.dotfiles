@@ -6,7 +6,7 @@ brew upgrade
 # Languages
 brew install rbenv php node yarn composer
 
-brew install coreutils moreutils findutils
+brew install coreutils moreutils findutils bat
 ln -s "${BREW_PREFIX}/bin/gsha256sum" "${BREW_PREFIX}/bin/sha256sum"
 
 # Language Helpers
