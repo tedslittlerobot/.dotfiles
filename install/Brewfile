@@ -1,0 +1,37 @@
+#! /usr/bin/env bash
+
+# Core / Build
+brew 'coreutils'
+brew 'moreutils'
+brew 'findutils'
+brew 'bat'
+
+# Languages
+brew 'rbenv'
+brew 'php'
+brew 'node'
+brew 'yarn'
+brew 'composer'
+
+# Language Helpers
+brew 'ctags'
+
+# Editor
+brew 'neovim'
+
+# Network tools
+brew 'curl'
+brew 'wget'
+brew 'dnsmasq'
+brew 'nmap'
+
+# Overrides
+brew 'git'
+brew 'git-lfs'
+brew 'openssh'
+brew 'grep'
+
+# Other
+brew 'ledger'
+brew 'figlet'
+brew 'cowsay'
