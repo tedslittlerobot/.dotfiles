@@ -8,4 +8,5 @@ bash install/node-modules.sh
 bash install/oh-my-zsh.sh
 
 bash setup/link.sh
-
+bash setup/zsh.sh
+bash setup/dnsmasq.sh

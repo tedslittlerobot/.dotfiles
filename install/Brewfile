@@ -24,6 +24,7 @@ brew 'curl'
 brew 'wget'
 brew 'dnsmasq'
 brew 'nmap'
+brew 'dnsmasq'
 
 # Overrides
 brew 'git'
