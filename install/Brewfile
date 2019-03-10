@@ -1,10 +1,15 @@
 #! /usr/bin/env bash
 
+tap 'homebrew/bundle'
+
 # Core / Build
 brew 'coreutils'
 brew 'moreutils'
 brew 'findutils'
 brew 'bat'
+brew 'bash' # Bash 4
+brew 'zsh'
+brew 'zsh-completions'
 
 # Languages
 brew 'rbenv'
@@ -33,6 +38,14 @@ brew 'openssh'
 brew 'grep'
 
 # Other
+brew 'awscli'
 brew 'ledger'
 brew 'figlet'
 brew 'cowsay'
+
+# CHECK BELOW
+
+# brew 'gnupg2'
+brew 'mas'
+# brew 'trash'
+brew 'tree'

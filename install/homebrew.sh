@@ -16,5 +16,3 @@ brew upgrade
 brew cleanup
 
 qlmanage -r
-
-# @todo - check https://github.com/driesvints/dotfiles/blob/master/Brewfile
