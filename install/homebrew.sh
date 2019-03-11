@@ -16,3 +16,4 @@ brew upgrade
 brew cleanup
 
 qlmanage -r
+
