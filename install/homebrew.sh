@@ -1,19 +1,18 @@
 #! /usr/bin/env bash
 
-# @todo - if brew doesn't exist, install
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+if ! [ -x "$(command -v brew)" ]; then
+	echo 'Installing Homebrew'
+	/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+fi
 
 brew update
 brew upgrade
 
 brew bundle --file=~/.dotfiles/install/Brewfile
-# Any other links from the Brewfile
-ln -s "${BREW_PREFIX}/bin/gsha256sum" "${BREW_PREFIX}/bin/sha256sum"
-
-brew bundle --file=~/.dotfiles/install/Caskfile
 
 brew upgrade
 brew cleanup
 
+# Any other links or config setup from the Brewfile
 qlmanage -r
 
