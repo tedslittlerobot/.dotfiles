@@ -52,5 +52,5 @@ function ql {
 }
 
 function redirect-chain {
-	wget $1 2>&1 | grep Location:
+	wget --delete-after $1 2>&1 | grep Location:
 }
