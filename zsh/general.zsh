@@ -51,3 +51,6 @@ function ql {
 	qlmanage -p "$@" >& /dev/null
 }
 
+function redirect-chain {
+	wget $1 2>&1 | grep Location:
+}

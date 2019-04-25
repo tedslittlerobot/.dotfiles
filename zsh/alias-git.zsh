@@ -6,4 +6,3 @@ alias gcasp='gcas && ggpush'
 alias gitbattle='git shortlog -s -n'
 alias gfap='git fetch --all --prune'
 alias gfuck='git reset HEAD~'
-
