@@ -11,6 +11,7 @@ source ~/.dotfiles/zsh/exports.zsh
 source ~/.dotfiles/zsh/general.zsh
 source ~/.dotfiles/zsh/php.zsh
 source ~/.dotfiles/zsh/dnsmasq.zsh
+source ~/.dotfiles/zsh/network.zsh
 
 # Load in any user zsh files in the ~/.zsh directory
 if [ -d ~/.zsh ]; then
