@@ -10,3 +10,11 @@ alias vvrc='vi ~/.config/nvim/init.vim'
 
 # sudo the last command
 alias ffs='sudo $(fc -ln -1)'
+
+alias pstt='pst .'
+alias phpu='./vendor/bin/phpunit'
+alias cmpi='composer install'
+alias cmpu='composer update'
+alias cmpr='composer require'
+alias cmpdu='composer dump-autoload'
+alias cmps='composer show --tree'
