@@ -34,14 +34,27 @@ brew 'nmap'
 # Overrides
 brew 'git'
 brew 'git-lfs'
+brew 'git-flow'
 brew 'openssh'
 brew 'grep'
 
 # Other
+brew 'thefuck'
 brew 'awscli'
 brew 'ledger'
 brew 'figlet'
 brew 'cowsay'
+brew 'archey'
+brew 'htop'
+brew 'nmap'
+brew 'geoip'
+brew 'watch'
+brew 'wifi-password'
+
+brew 'links'
+brew 'lynx'
+brew 'irssi'
+brew 'midnight-commander'
 
 # CHECK BELOW
 
@@ -74,11 +87,11 @@ cask 'iterm2'
 cask 'kaleidoscope'
 cask 'keka'
 cask 'macdown'
-cask 'macdown'
 cask 'mysqlworkbench'
 cask 'opera'
 cask 'phpstorm'
 cask 'sequel-pro'
+cask 'sqlpro-for-postgres'
 cask 'skype'
 cask 'slack'
 cask 'spotify'
@@ -114,6 +127,8 @@ cask 'suspicious-package'
 cask 'webpquicklook'
 cask 'qlprettypatch'
 cask 'quicklook-csv'
+cask 'quicklookase'
+cask 'qlImageSize'
 
 # }}}
 
