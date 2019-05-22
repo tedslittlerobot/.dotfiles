@@ -3,6 +3,8 @@
 composer global update
 
 composer global require squizlabs/php_codesniffer
+composer global require phpmd/phpmd
+
 # composer global require laravel/installer
 # composer global require phploc/phploc
 # composer global require phpdocumentor/phpdocumentor
