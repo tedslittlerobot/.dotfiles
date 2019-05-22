@@ -8,7 +8,6 @@ bash install/oh-my-zsh.sh
 
 bash setup/link.sh
 bash setup/zshrc.sh
-bash setup/dnsmasq.sh
 
 # https://github.com/driesvints/dotfiles
 # https://github.com/mathiasbynens/dotfiles
