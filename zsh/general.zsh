@@ -29,15 +29,6 @@ function ansicolours {
 	echo
 }
 
-
-function transfer {
-	if [[ "$HOMESLICE_OS" == "osx" ]]; then
-		curl --upload-file ./$1 https://transfer.sh/$1 | pbcopy
-	else
-		curl --upload-file ./$1 https://transfer.sh/$1
-	fi
-}
-
 function notes-todo {
 	test -z $1 && echo "Specify a folder to test" >&2 && return
 
@@ -49,8 +40,4 @@ function notes-todo {
 
 function ql {
 	qlmanage -p "$@" >& /dev/null
-}
-
-function redirect-chain {
-	wget --delete-after $1 2>&1 | grep Location:
 }
