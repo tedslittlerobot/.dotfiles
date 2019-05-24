@@ -50,6 +50,7 @@ brew 'nmap'
 brew 'geoip'
 brew 'watch'
 brew 'wifi-password'
+brew 'terminal-notifier'
 
 brew 'links'
 brew 'lynx'
