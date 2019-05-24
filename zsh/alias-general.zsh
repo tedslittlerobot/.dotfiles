@@ -33,5 +33,6 @@ alias cmps='composer show --tree'
 
 # sudo the last command
 alias ffs='sudo $(fc -ln -1)'
+alias https='http --default-scheme=https'
 
 # }}}
