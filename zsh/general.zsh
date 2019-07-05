@@ -1,4 +1,5 @@
 
+alias ll='ls -GCAlh'
 export FZF_COMPLETION_TRIGGER='§§'
 
 function ansicolours {
