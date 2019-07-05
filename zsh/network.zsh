@@ -1,8 +1,8 @@
 
 # Upload the given file and get a public URL for it
 function transfer {
-	if [[ "$HOMESLICE_OS" == "osx" ]]; then
-		curl --upload-file ./$1 https://transfer.sh/$1 | pbcopy
+	if [[ $1 == "--copy" ]]; then
+		curl --upload-file ./$2 https://transfer.sh/$2 | pbcopy
 	else
 		curl --upload-file ./$1 https://transfer.sh/$1
 	fi
