@@ -2,9 +2,9 @@
 # Upload the given file and get a public URL for it
 function transfer {
 	if [[ $1 == "--copy" ]]; then
-		curl --upload-file ./$2 https://transfer.sh/$2 | pbcopy
+		curl --progress-bar --upload-file ./$2 https://transfer.sh/$2 | pbcopy
 	else
-		curl --upload-file ./$1 https://transfer.sh/$1
+		curl --progress-bar --upload-file ./$1 https://transfer.sh/$1
 	fi
 }
 
