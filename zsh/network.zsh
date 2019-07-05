@@ -15,5 +15,11 @@ function redirect-chain {
 
 # Launch docker instance
 function dexec() {
-	docker exec -it $1 /bin/bash
+	CONTAINER=$1
+
+	if [[ -z $CONTAINER ]]; then
+		CONTAINER=`docker ps | tail -n +2 | fzf | awk -F ' ' '{print $1}'`
+	fi
+
+	docker exec -it $CONTAINER /bin/bash
 }
