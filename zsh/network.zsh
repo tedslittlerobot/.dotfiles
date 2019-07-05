@@ -14,11 +14,11 @@ function redirect-chain {
 }
 
 # Launch docker instance
-function dexec() {
+function d-exec() {
 	CONTAINER=$1
 
 	if [[ -z $CONTAINER ]]; then
-		CONTAINER=`docker ps | tail -n +2 | fzf | cut -d ' ' -f 1`
+		CONTAINER=`docker ps | tail -n +2 | fzf | cut -d ' ' -f 1 | sed 's/^//' | tr '\n' ' '`
 	fi
 
 	if [[ -z $CONTAINER ]]; then
@@ -27,4 +27,20 @@ function dexec() {
 	fi
 
 	docker exec -it $CONTAINER /bin/bash
+}
+
+# Remove local docker instance
+function d-rm() {
+	CONTAINER=$1
+
+	if [[ -z $CONTAINER ]]; then
+		CONTAINER=`docker ps | tail -n +2 | fzf | cut -d ' ' -f 1 | sed 's/^//' | tr '\n' ' '`
+	fi
+
+	if [[ -z $CONTAINER ]]; then
+		echo -e "\u001b[31m  !! No docker container selected !!  \u001b[0m"
+		return 1
+	fi
+
+	docker container rm -f $CONTAINER
 }
