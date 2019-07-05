@@ -15,8 +15,7 @@ brew 'zsh-completions'
 # Languages
 brew 'rbenv'
 brew 'php'
-brew 'node'
-brew 'yarn'
+brew 'nvm'
 brew 'composer'
 
 # Language Helpers
@@ -53,6 +52,9 @@ brew 'geoip'
 brew 'watch'
 brew 'wifi-password'
 brew 'terminal-notifier'
+brew 'terraform'
+brew 'packer'
+brew 'watch'
 
 brew 'links'
 brew 'lynx'
