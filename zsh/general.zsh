@@ -1,4 +1,6 @@
 
+export FZF_COMPLETION_TRIGGER='§§'
+
 function ansicolours {
 	# http://tldp.org/HOWTO/Bash-Prompt-HOWTO/x329.html
 
