@@ -10,6 +10,7 @@ source ~/.dotfiles/zsh/alias-general.zsh
 source ~/.dotfiles/zsh/exports.zsh
 source ~/.dotfiles/zsh/general.zsh
 source ~/.dotfiles/zsh/php.zsh
+source ~/.dotfiles/zsh/node.zsh
 source ~/.dotfiles/zsh/dnsmasq.zsh
 source ~/.dotfiles/zsh/network.zsh
 
