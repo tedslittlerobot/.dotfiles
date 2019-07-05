@@ -18,7 +18,12 @@ function dexec() {
 	CONTAINER=$1
 
 	if [[ -z $CONTAINER ]]; then
-		CONTAINER=`docker ps | tail -n +2 | fzf | awk -F ' ' '{print $1}'`
+		CONTAINER=`docker ps | tail -n +2 | fzf | cut -d ' ' -f 1`
+	fi
+
+	if [[ -z $CONTAINER ]]; then
+		echo -e "\u001b[31m  !! No docker container selected !!  \u001b[0m"
+		return 1
 	fi
 
 	docker exec -it $CONTAINER /bin/bash
