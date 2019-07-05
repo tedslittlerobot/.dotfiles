@@ -12,3 +12,8 @@ function transfer {
 function redirect-chain {
 	wget --delete-after $1 2>&1 | grep Location:
 }
+
+# Launch docker instance
+function dexec() {
+	docker exec -it $1 /bin/bash
+}
