@@ -2,6 +2,9 @@
 alias ll='ls -GCAlh'
 export FZF_COMPLETION_TRIGGER='§§'
 
+alias dotgit="git -C ~/.dotfiles"
+alias dotupdate="dotgit pull"
+
 function ansicolours {
 	# http://tldp.org/HOWTO/Bash-Prompt-HOWTO/x329.html
 
