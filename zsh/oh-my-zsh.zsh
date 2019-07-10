@@ -8,5 +8,5 @@ plugins=(
   sublime
   laravel
   docker
+  github
 )
-
