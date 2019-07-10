@@ -55,6 +55,7 @@ brew 'terminal-notifier'
 brew 'terraform'
 brew 'packer'
 brew 'watch'
+brew 'hub'
 
 brew 'links'
 brew 'lynx'
