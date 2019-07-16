@@ -18,7 +18,7 @@ function d-exec() {
 	CONTAINER=$1
 
 	if [[ -z $CONTAINER ]]; then
-		CONTAINER=`docker ps | tail -n +2 | fzf | cut -d ' ' -f 1 | sed 's/^//' | tr '\n' ' ' | tr -d '[:space:]'`
+		CONTAINER=`docker ps --format "{{.ID}}    {{.Names}} ({{.Image}})" | fzf | cut -d ' ' -f 1 | sed 's/^//' | tr '\n' ' ' | tr -d '[:space:]'`
 	fi
 
 	if [[ -z $CONTAINER ]]; then
@@ -34,7 +34,7 @@ function d-rm() {
 	CONTAINER=$1
 
 	if [[ -z $CONTAINER ]]; then
-		CONTAINER=`docker ps | tail -n +2 | fzf | cut -d ' ' -f 1 | sed 's/^//' | tr '\n' ' ' | tr -d '[:space:]'`
+		CONTAINER=`docker ps --format "{{.ID}}    {{.Names}} ({{.Image}})" | fzf | cut -d ' ' -f 1 | sed 's/^//' | tr '\n' ' ' | tr -d '[:space:]'`
 	fi
 
 	if [[ -z $CONTAINER ]]; then
