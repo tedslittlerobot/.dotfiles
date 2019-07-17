@@ -8,3 +8,4 @@ alias gfuck='git reset HEAD~'
 # OMZ overrides
 alias gd='git diff --word-diff=color'
 alias gds='gd --cached'
+alias gclean='git clean -dx'
