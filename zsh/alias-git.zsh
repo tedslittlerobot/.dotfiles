@@ -4,3 +4,7 @@ alias gitbattle='git shortlog -s -n'
 
 # Un-does the latest commit, restoring everything to the git stage
 alias gfuck='git reset HEAD~'
+
+# OMZ overrides
+alias gd='git diff --word-diff=color'
+alias gds='gd --cached'
