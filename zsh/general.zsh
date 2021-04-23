@@ -1,3 +1,4 @@
+#! /usr/bin/env zsh
 
 alias ll='ls -GCAlh'
 export FZF_COMPLETION_TRIGGER='§§'

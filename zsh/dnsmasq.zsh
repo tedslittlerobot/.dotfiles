@@ -1,3 +1,4 @@
+#! /usr/bin/env zsh
 
 # Adds a domain to DNSmasq so that it always points to 127.0.0.1
 function dnsmasq-add() {

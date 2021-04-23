@@ -1,3 +1,4 @@
+#! /usr/bin/env zsh
 
 # Upload the given file and get a public URL for it
 function transfer {
@@ -26,7 +27,7 @@ function d-exec() {
 		return 1
 	fi
 
-	docker exec -it $CONTAINER /bin/bash
+	docker exec -it $CONTAINER /bin/sh
 }
 
 # Remove local docker instance

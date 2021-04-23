@@ -1,3 +1,5 @@
+#! /usr/bin/env zsh
+
 export ZSH=~/.oh-my-zsh
 
 ZSH_THEME="pygmalion"
