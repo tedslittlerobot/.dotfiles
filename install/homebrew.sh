@@ -20,4 +20,3 @@ brew cleanup
 
 # Any other links or config setup from the Brewfile
 qlmanage -r
-

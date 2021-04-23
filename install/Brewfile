@@ -148,18 +148,17 @@ mas 'Keynote', id: 409183694
 mas 'DaisyDisk', id: 411643860
 mas '1Password', id: 1333542190
 mas 'Magnet', id: 441258766
-# mas 'Moom', id: 419330170
 
-mas 'Airmail 3', id: 918858936
 mas 'Spark', id: 1176895641
-mas '2Do', id: 477670270
-mas 'iA Writer', id: 775737590
+mas 'Things 3', id: 904280696
 mas 'Bear', id: 1091189122
 mas 'Create Booklet', id: 943029046
 mas 'XMind', id: 1327661892
 mas 'WhatsApp', id: 1147396723
 mas 'Giphy Capture', id: 668208984
 mas 'The Unarchiver', id: 425424353
+mas 'Ping Buddy', id: 1523341507
+mas 'Xcode', id: 497799835
 
 # }}}
 
