@@ -5,6 +5,17 @@ export FZF_COMPLETION_TRIGGER='§§'
 alias dotgit="git -C ~/.dotfiles"
 alias dotupdate="dotgit pull && source ~/.zshrc"
 
+## A helper function to change the current directory to a
+#   subdirectory of ~/projects.
+function pd() {
+	if [[ -z $1 ]]; then
+		cd ~/projects
+		return
+	fi
+
+    cd ~/projects/$1
+}
+
 function ansicolours {
 	# http://tldp.org/HOWTO/Bash-Prompt-HOWTO/x329.html
 
